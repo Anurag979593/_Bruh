@@ -25,14 +25,46 @@ html {
 
 /* NAVBAR STYLE */
 
+
 a.title{
   text-decoration: none !important;
-  color: #5e2ced;
 }
 a.title:hover{
   color: #fff;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+.nav_item{
+  
+  padding: 15px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.nav_item:hover{
+  color:#5e2ced !important;
+ 
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+  font-family: 'Nunito', sans-serif;
+    display: block;
+    margin-top: 15px; // remove the gap so it doesn't close
+    
+ }
+
+ .dropdown-menu{
+  background: #f8f9fa !important;
+  font-size: 14px;
+ }
+
+
+
+ .dropdown-menu .dropdown-item{
+  padding-bottom: 7px;
+ }
 
 .header_nav li{
 
@@ -112,10 +144,7 @@ a:hover,
   color: var(--ivory);
 }
 
-.navbar-custom .nav-item .nav-link:hover,
-.navbar-custom .nav-item.active .nav-link {
-  color: var(--light-blue) !important;
-}
+
 
 /* SEARCH BOX */
 
@@ -164,6 +193,21 @@ a:hover,
 }
 
 /* HOME PAGE */
+
+
+.carousel {
+    height: 90vh;
+    width: 100%;
+    overflow:hidden;
+}
+.carousel .carousel-inner {
+    height:100%; 
+    object-fit: cover;   
+}
+
+
+
+
 
 .circle-img {
   object-fit: cover;
