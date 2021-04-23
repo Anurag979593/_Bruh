@@ -32,10 +32,9 @@
     </div>
     <div class="col-md-5 mt-2 mb-2 ml-2 mr-auto text-dark">
       <h2 class="product_title"><%=product.title%></h2>
-      <p class="price">USD $<%=product.price%></p>
-      <p class="lead"> Description: 
-        <p><%=product.description%></p>
-      </p>
+      <br>
+      <br>
+      <p class="price">INR ₹<%=product.price%></p>
       
       <p><strong>Category:</strong> <%=product.category.title%></p>
       <p><strong>Brand: </strong><%=product.manufacturer%></p>
@@ -50,6 +49,15 @@
       <p class="is-not-available text-center">Sold out</p>
       <%} %>
     </div>
+  </div>
+
+
+  <h1 class="sign_h">Description</h1>
+      <hr class="line">
+  <div class="product_desc">
+
+        <%=product.description%></p>
+    
   </div>
 </div>
 <%- include ../partials/footer %>
