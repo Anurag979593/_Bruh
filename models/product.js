@@ -19,6 +19,39 @@ const productSchema = Schema({
     type: String,
     required: true,
   },
+  description_use_first: {
+    type: String,
+    required: true,
+  },
+  description_use_second: {
+    type: String,
+    required: true,
+  },
+  description_use_third: {
+    type: String,
+    required: true,
+  },
+  specific_type: {
+    type: String,
+    required: true,
+  },
+  specific_ingredients: {
+    type: String,
+    required: true,
+  },
+  specific_date: {
+     type: Date,
+    default: Date.now,
+  },
+  specific_expiry_date: {
+     type: Date,
+    default: Date.now,
+  },
+  specific_quantity: {
+    type: String,
+    required: true,
+  },
+
   price: {
     type: Number,
     required: true,
