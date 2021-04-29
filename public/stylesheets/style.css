@@ -50,7 +50,7 @@ a.title:hover{
 .dropdown:hover .dropdown-menu {
   font-family: 'Nunito', sans-serif;
     display: block;
-    margin-top: 15px; // remove the gap so it doesn't close
+    margin-top: -5px; // remove the gap so it doesn't close
     
  }
 

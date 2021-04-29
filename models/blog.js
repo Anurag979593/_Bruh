@@ -15,6 +15,10 @@ const blogSchema = Schema({
     type: String,
     required: true,
   },
+  blog_category: {
+    type: String,
+    required: true,
+  }, 
   description: {
     type: String,
     required: true,

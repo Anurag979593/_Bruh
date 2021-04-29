@@ -72,6 +72,7 @@ router.get("/search", async (req, res) => {
 
 //GET: get a certain category by its slug (this is used for the categories navbar)
 router.get("/:slug", async (req, res) => {
+ 
   const successMsg = req.flash("success")[0];
   const errorMsg = req.flash("error")[0];
   const perPage = 8;
