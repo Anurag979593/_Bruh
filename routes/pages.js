@@ -16,6 +16,28 @@ router.get("/about-us", (req, res) => {
   });
 });
 
+//GET: display disclaimer page
+router.get("/disclaimer", (req, res) => {
+  res.render("pages/disclaimer", {
+    pageName: "Disclaimer",
+  });
+});
+
+
+//GET: display privacy policy page
+router.get("/privacy-policy", (req, res) => {
+  res.render("pages/privacy-policy", {
+    pageName: "Privacy Policy",
+  });
+});
+
+//GET: display terms of use page
+router.get("/terms-of-use", (req, res) => {
+  res.render("pages/terms-of-use", {
+    pageName: "Terms Of Use",
+  });
+});
+
 //GET: display shipping policy page
 router.get("/shipping-policy", (req, res) => {
   res.render("pages/shipping-policy", {
